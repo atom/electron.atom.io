@@ -21,6 +21,19 @@ module.exports = function copyCodeToClipBoard () {
     button.setAttribute('data-clipboard-target', `#${id}`)
     button.innerHTML = window.localized.clipboard.copy
     code.parentElement.appendChild(button)
+
+    // Make prefixed dollars unselectable
+    code.innerHTML = code.innerHTML.replace(/\n\$ /g, '\n<span class="no-select">$ </span>')
+
+    if (code.classList.contains('language-sh')) {
+      // Make bash comments unselectable
+      code.querySelectorAll('.hljs-comment').forEach(comment => {
+        comment.classList.add('no-select')
+      })
+
+      // Remove comment new-lines from selection
+      code.innerHTML = code.innerHTML.replace(/(^|\n)(<span class="hljs-comment no-select"># .+?<\/span>)\n/g, '$1$2<br class="no-select" />')
+    }
   })
 
   document.querySelectorAll('.btn-clipboard').forEach(button => {

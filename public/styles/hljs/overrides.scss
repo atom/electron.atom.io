@@ -33,3 +33,7 @@ pre {
     content: '';
   }
 }
+
+.hljs .no-select {
+  user-select: none;
+}
