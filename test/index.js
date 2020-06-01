@@ -454,7 +454,7 @@ describe('electronjs.org', () => {
       let $ = await get('/devtron')
       $('.jumbotron-lead .jumbotron-lead-muted').text().should.eq('An Electron DevTools Extension')
       $ = await get('/spectron')
-      $('.jumbotron-lead .jumbotron-lead-muted').text().should.eq('An Electron Testing Framework')
+      $('.jumbotron-lead .jumbotron-lead-muted').text().should.eq('An Electron Testing Framework (currently unmaintained)')
     })
   })
 
