@@ -69,3 +69,50 @@
     vertical-align: middle;
   }
 }
+
+.header-icon {
+  svg {
+
+    display: block;
+
+    circle {
+      transition: all 0.3s;
+      fill: $jumbo-color;
+    }
+
+    path {
+      fill: #2f3241;
+    }
+  
+    &.active,
+    &:hover{
+      circle {
+        fill: $jumbo-color-strong;
+      }
+    }
+  
+    &:active {
+      circle {
+        fill: $jumbo-color-subtle;
+      }
+    }
+  }
+}
+
+.footer-icon {
+  svg {
+    circle {
+      fill: $main-color-strong;
+    }
+  
+    path {
+      fill: #f6f8f8;
+    }
+    
+    &:hover {
+      circle {
+        fill: $main-color-subtle;
+      }
+    }
+  }
+}

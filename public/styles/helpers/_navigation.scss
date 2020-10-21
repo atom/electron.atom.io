@@ -103,6 +103,10 @@
     border: none;
   }
 
+  &.site-header-nav-icon {
+    border-bottom: 4px solid transparent;
+  }
+
   &.bordered {
     border: 1px solid $jumbo-color-strong;
     border-radius: 3px;
