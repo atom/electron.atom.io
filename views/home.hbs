@@ -9,6 +9,46 @@
   </div>
 
 <div class="py-6 py-md-7 py-lg-8">
+  <div class="container-lg p-responsive p-8">
+    <div>
+      <h1 class="f1-light text-center">{{localized.landing.fiddle.lead_desc}}</h1>
+      <div class="d-flex flex-justify-center flex-items-center flex-column flex-md-row pt-8">
+        <div class="d-flex">
+            <img
+              class="fiddle-icon"
+              src="{{ site.baseurl }}/images/fiddle/fiddle-icon.svg"
+              alt="Electron Fiddle Icon"
+            >
+            <img
+              class="ml-5"
+              src="{{ site.baseurl }}/images/fiddle/fiddle-logo.svg"
+              alt="Electron Fiddle"
+            >
+        </div>
+        <div class="ml-md-6 pl-lg-6 mt-6 mt-md-0">
+          <p>
+            <a
+              id="download-latest-release"
+              class="btn-mktg btn-outline-mktg"
+              href="https://github.com/electron/fiddle/releases/latest"
+            >
+              <span class="octicon octicon-desktop-download"></span>
+              <span>{{{localized.download_from_github}}}</span>
+            </a>
+            <a
+              id="download-latest-release"
+              class="btn-mktg btn-outline-mktg"
+              href="/fiddle"
+            >
+              <span class="octicon octicon-info"></span>
+              <span>{{{localized.explore.see_more_info}}}</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr class="pt-8">
+  </div>
   <div class="container-lg p-responsive">
     <div>
       <h1 class="f0-light text-center"><a href="/releases/stable">{{localized.nav.releases}}</a></h1>
@@ -129,7 +169,6 @@
     </div>
   </div>
 </div>
-
 
 <div class='py-7 py-md-8 py-lg-9 bg-shade' id='get-started'>
   <div class='container-lg p-responsive text-center'>
