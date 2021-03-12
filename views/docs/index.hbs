@@ -1,33 +1,150 @@
+<style>
+  h3 {
+    margin-top: 1em !important;
+    margin-bottom: 0.35em !important;
+  }
+
+</style>
 <main class="PRIMER-REMOVE-ME">
   <div class='subtron'>
     <div class='container-lg'>
       <h1><span class="f0-light mr-3 mr-lg-4">{{localized.docs.title}}</span><span class="docs-version">{{electronLatestStableVersion}}</span></h1>
-      <p class="lead mb-3">{{{localized.docs.description}}}</p>
+      {{!-- <p class="lead mb-3">{{{localized.docs.description}}}</p> --}}
     </div>
   </div>
 
   <div class='py-5 py-md-6 py-lg-7 docs-page'>
     <div class='container-xl p-responsive clearfix'>
       <div class="docs-guides mx-4 py-5">
-        <h2 class="docs-heading">
+        {{!-- <h2 class="docs-heading">
           <a class="docs-title" href="/docs/tutorial">
             <span class="mega-octicon octicon-book pr-6"></span>{{localized.docs.guides}}
           </a>
-        </h2>
+        </h2> --}}
         <div class="docs-guides-list docs-guides-readme">
           <div class="container-xl clearfix">
-            <div class="col-md-6">
-              {{{guidesQuickstart.html}}}
-              {{{guidesBasic.html}}}
+            <div class="col-md-4">
+              <h3 id="quickstart"><a href="#quickstart"><span class="mega-octicon octicon-mortar-board pr-3"></span>Get started</a></h3>
+              <ul>
+                <li><a href="/docs/tutorial/quick-start">Prerequisites</a></li>
+                <li><a href="/docs/tutorial/quick-start">Create a basic application</a></li>
+                <li><a href="/docs/tutorial/quick-start">Run your application</a></li>
+                <li><a href="/docs/tutorial/quick-start">Package and distribute the application</a></li>
+              </ul>
+              <h3 id="quickstart"><a href="#quickstart"><span class="mega-octicon octicon-tools pr-3"></span>Development</a></h3>
+              <ul>
+                <li><a href="/docs/tutorial/quick-start">Electron's Process Model</a></li>
+                <li><a href="/docs/tutorial/quick-start">Process Object</a></li>
+                <li><a href="/docs/tutorial/quick-start">Supported CLI switches</a></li>
+                <li><a href="/docs/tutorial/quick-start">Environment variables</a></li>
+                <li><a href="/docs/tutorial/quick-start">Chrome Extensions Support</a></li>
+                <li><a href="/docs/tutorial/quick-start">Accessibility (a11y)</a></li>
+                <li><a href="/docs/tutorial/quick-start">Internazionalization (i18n)</a></li>
+                <li><a href="/docs/tutorial/quick-start">Electron API</a></li>
+                <li><a href="/docs/tutorial/quick-start">Node.js API</a></li>
+                <li><a href="/docs/tutorial/quick-start">Using Native Node.js Modules</a></li>
+              </ul>
+              <h3 id="quickstart"><a href="#quickstart"><span class="mega-octicon octicon-bug pr-3"></span>Testing and Debugging</a></h3>
+              <ul>
+                <li><a href="/docs/tutorial/quick-start">Debugging the Main Process</a></li>
+                <li><a href="/docs/tutorial/quick-start">Debugging with Visual Studio Code</a></li>
+                <li><a href="/docs/tutorial/quick-start">Using Selenium and WebDriver</a></li>
+                <li><a href="/docs/tutorial/quick-start">Testing on Headless CI Systems (Travis, Jenkins)</a></li>
+                <li><a href="/docs/tutorial/quick-start">DevTools Extension</a></li>
+                <li><a href="/docs/tutorial/quick-start">Automated Testing with a Custom Driver</a></li>
+                <li><a href="/docs/tutorial/quick-start">Testing Widevine CDM</a></li>
+              </ul>
+              <h3 id="quickstart"><a href="#quickstart"><span class="mega-octicon octicon-desktop-download pr-3"></span>Distribution/Deployment</a></h3>
+              <ul>
+                <li><a href="/docs/tutorial/quick-start">Supported Platforms</a></li>
+                <li><a href="/docs/tutorial/quick-start">Code Signing</a></li>
+                <li><a href="/docs/tutorial/quick-start">Mac App Store</a></li>
+                <li><a href="/docs/tutorial/quick-start">Windows Store</a></li>
+                <li><a href="/docs/tutorial/quick-start">Snapcraft</a></li>
+              </ul>
+              <h3 id="quickstart"><a href="#quickstart"><span class="mega-octicon octicon-sync pr-3"></span>Updates</a></h3>
+              <ul>
+                <li><a href="/docs/tutorial/quick-start">Implementing Updates in Your App</a></li>
+                <li><a href="/docs/tutorial/quick-start">Deploying an Update Server</a></li>
+                <li><a href="/docs/tutorial/quick-start">Applying Updates</a></li>
+              </ul>
+              </div>
+              <div class="col-md-4">
+                <h3 id="quickstart"><a href="#quickstart"><span class="mega-octicon octicon-rocket pr-3"></span>Performance</a></h3>
+              <ul>
+                <li><a href="/docs/tutorial/quick-start">Measure, Measure, Measure</a></li>
+                <li><a href="/docs/tutorial/quick-start">Performance checks</a></li>
+              </ul>
+              <h3 id="quickstart"><a href="#quickstart"><span class="mega-octicon octicon-lock pr-3"></span>Security</a></h3>
+              <ul>
+                <li><a href="/docs/tutorial/quick-start">Security is Everyone's Responsibility</a></li>
+                <li><a href="/docs/tutorial/quick-start">Isolation For Untrusted Content</a></li>
+                <li><a href="/docs/tutorial/quick-start">Security Recommendations</a></li>
+                <li><a href="/docs/tutorial/quick-start">Electron Security Warnings</a></li>
+                <li><a href="/docs/tutorial/quick-start">Reporting Security Issues</a></li>
+                <li><a href="/docs/tutorial/quick-start">Chromium Security Issues and Upgrades</a></li>
+              </ul>
+              <h3 id="quickstart"><a href="#quickstart"><span class="mega-octicon octicon-beaker pr-3"></span>How to...</a></h3>
+              <ul>
+                <li><a href="/docs/tutorial/quick-start">Notifications</a></li>
+                <li><a href="/docs/tutorial/quick-start">Recent Documents</a></li>
+                <li><a href="/docs/tutorial/quick-start">Application Progress</a></li>
+                <li><a href="/docs/tutorial/quick-start">Custom Dock Menu</a></li>
+                <li><a href="/docs/tutorial/quick-start">Custom Windows Taskbar</a></li>
+                <li><a href="/docs/tutorial/quick-start">Custom Linux Desktop Actions</a></li>
+                <li><a href="/docs/tutorial/quick-start">Keyboard Shortcuts</a></li>
+                <li><a href="/docs/tutorial/quick-start">Offline/Online detection</a></li>
+                <li><a href="/docs/tutorial/quick-start">Represented File for macOS BrowserWindows</a></li>
+                <li><a href="/docs/tutorial/quick-start">Native File Drag &amp; Drop</a></li>
+                <li><a href="/docs/tutorial/quick-start">Offscreen Rendering</a></li>
+                <li><a href="/docs/tutorial/quick-start">Dark Mode</a></li>
+                <li><a href="/docs/tutorial/quick-start">Web embeds in Electron</a></li>
+              </ul>
+              <h3 id="quickstart"><a href="#quickstart"><span class="mega-octicon octicon-light-bulb pr-3"></span>Internals</a></h3>
+              <ul>
+                <li><a href="/docs/tutorial/quick-start">Electron Architecture Overview</a></li>
+                <li><a href="/docs/tutorial/quick-start">Message Loop Integration</a></li>
+                <li><a href="/docs/tutorial/quick-start">Using Node as a Library</a></li>
+                <li><a href="/docs/tutorial/quick-start">Weak References</a></li>
+                <li><a href="/docs/tutorial/quick-start">Building Chromium as a Library</a></li>
+                <li><a href="/docs/tutorial/quick-start">From native to JavaScript in Electron</a></li>
+                <li><a href="/docs/tutorial/quick-start">Technical Differences Between Electron and NW.js</a></li>
+              </ul>
+              <h3 id="quickstart"><a href="#quickstart"><span class="mega-octicon octicon-calendar pr-3"></span>Electron versions and migration</a></h3>
+              <ul>
+                <li><a href="/docs/tutorial/quick-start">Releases &amp; Developer Feedback</a></li>
+                <li><a href="/docs/tutorial/quick-start">Versioning Policy</a></li>
+                <li><a href="/docs/tutorial/quick-start">Releases Timelines</a></li>
+                <li><a href="/docs/tutorial/quick-start">Breaking API Changes</a></li>
+              </ul>
             </div>
-            <div class="col-md-6">
-              {{{guidesAdvanced.html}}}
+            <div class="col-md-4">
+                <h3 id="quickstart"><a href="#quickstart"><span class="mega-octicon octicon-gear pr-3"></span>API Reference</a></h3>
+              <ul>
+                <li><a href="/docs/tutorial/quick-start">Custom DOM Elements</a></li>
+                <li><a href="/docs/tutorial/quick-start">Main Process Modules</a></li>
+                <li><a href="/docs/tutorial/quick-start">Renderer Process Modules</a></li>
+                <li><a href="/docs/tutorial/quick-start">Modules for Both Process Types</a></li>
+              </ul>
+              <h3 id="quickstart"><a href="#quickstart"><span class="mega-octicon octicon-git-pull-request pr-3"></span>Contributing</a></h3>
+              <ul>
+                <li><a href="/docs/tutorial/quick-start">How to Contribute</a></li>
+                <li><a href="/docs/tutorial/quick-start">Code of Conduct</a></li>
+                <li><a href="/docs/tutorial/quick-start">Developing Electron</a></li>
+                <li><a href="/docs/tutorial/quick-start">Build Instructions</a></li>
+              </ul>
+              <h3 id="quickstart"><a href="#quickstart"><span class="mega-octicon octicon-book pr-3"></span>Resources</a></h3>
+              <ul>
+                <li><a href="/docs/tutorial/quick-start">Glossary of Terms</a></li>
+                <li><a href="/docs/tutorial/quick-start">Tools and Boilerplates</a></li>
+                <li><a href="/docs/tutorial/quick-start">Getting support</a></li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class='container-xl p-responsive clearfix'>
+    {{!-- <div class='container-xl p-responsive clearfix'>
       <div class="d-sm-flex d-flex-column">
 
         <div class="col-ms-12 col-lg-3 mx-3">
@@ -106,9 +223,9 @@
         </div>
 
       </div>
-    </div>
+    </div> --}}
   </div>
-  <div class="py-6 py-md-7 py-lg-8">
+  {{!-- <div class="py-6 py-md-7 py-lg-8">
     <div class="container-lg p-responsive clearfix">
       <p class="text-center">
           <a href="/docs/all">{{localized.docs.view_all_docs}}</a>
@@ -116,5 +233,5 @@
         <a href="/docs/faq">{{localized.footer.see_the_faq}}</a>.
       </p>
     </div>
-  </div>
+  </div> --}}
 </main>

@@ -1,6 +1,181 @@
-{{#each doc.sections}}
-  {{> doc
-    doc=this
-    currentLocale=../currentLocale
-  }}
-{{/each}}
+<style>
+  ul.sidebar-navigation, ul.sidebar-navigation ul {
+    font-size: 14px;
+    font-weight: 300;
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  ul.sidebar-navigation ul {
+    padding-inline-start: 0 !important;
+  }
+
+  ul.sidebar-navigation h3 {
+    font-weight: bold !important;
+    font-size: 16px !important;
+    margin-top: 1rem;
+  }
+
+  ul.sidebar-navigation li {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  ul.collapsed {
+    display: none;
+  }
+
+  ul.sidebar-navigation h3 > a::after {
+    font-family: 'octicons';
+    content: ' \f117';
+  }
+
+  h3 > a.collapsed::after {
+    font-family: 'octicons';
+    content: ' \f11a';
+  }
+</style>
+
+<div class="container-xl clearfix">
+  <div class="col-md-3">
+    <ul class="sidebar-navigation table-of-contents">
+      <li>
+        <h3><a href="#">Get started</a></h3>
+        <ul>
+          <li><a href="#">Prerequisites</a></li>
+          <li><a href="#">Create a basic application</a></li>
+          <li><a href="#">Run your application</a></li>
+          <li><a href="#">Package and distribute the application</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3><a href="#" class="collapsed">Development</a></h3>
+        <ul class="collapsed">
+          <li><a href="#">Electron's Process Model</a></li>
+          <li><a href="#">Process Object</a></li>
+          <li><a href="#">Supported CLI switches</a></li>
+          <li><a href="#">Environment variables</a></li>
+          <li><a href="#">Chrome Extensions Support</a></li>
+          <li><a href="#">Accessibility (a11y)</a></li>
+          <li><a href="#">Internazionalization (i18n)</a></li>
+          <li><a href="#">Electron API</a></li>
+          <li><a href="#">Node.js API</a></li>
+          <li><a href="#">Using Native Node.js Modules</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3><a href="#" class="collapsed">Testing and debugging</a></h3>
+        <ul class="collapsed">
+          <li><a href="/docs/tutorial/quick-start">Debugging the Main Process</a></li>
+          <li><a href="/docs/tutorial/quick-start">Debugging with Visual Studio Code</a></li>
+          <li><a href="/docs/tutorial/quick-start">Using Selenium and WebDriver</a></li>
+          <li><a href="/docs/tutorial/quick-start">Testing on Headless CI Systems (Travis, Jenkins)</a></li>
+          <li><a href="/docs/tutorial/quick-start">DevTools Extension</a></li>
+          <li><a href="/docs/tutorial/quick-start">Automated Testing with a Custom Driver</a></li>
+          <li><a href="/docs/tutorial/quick-start">Testing Widevine CDM</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3><a href="#" class="collapsed">Distribution</a></h3>
+        <ul class="collapsed">
+          <li><a href="/docs/tutorial/quick-start">Supported Platforms</a></li>
+          <li><a href="/docs/tutorial/quick-start">Code Signing</a></li>
+          <li><a href="/docs/tutorial/quick-start">Mac App Store</a></li>
+          <li><a href="/docs/tutorial/quick-start">Windows Store</a></li>
+          <li><a href="/docs/tutorial/quick-start">Snapcraft</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3><a href="#" class="collapsed">Updates</a></h3>
+        <ul class="collapsed">
+          <li><a href="/docs/tutorial/quick-start">Implementing Updates in Your App</a></li>
+          <li><a href="/docs/tutorial/quick-start">Deploying an Update Server</a></li>
+          <li><a href="/docs/tutorial/quick-start">Applying Updates</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3><a href="#">Performance</a></h3>
+        <ul>
+          <li><a href="/docs/tutorial/quick-start">Measure, Measure, Measure</a></li>
+          <li><a href="/docs/tutorial/quick-start">Performance checks</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3><a href="#">Security</a></h3>
+        <ul>
+          <li><a href="/docs/tutorial/quick-start">Security is Everyone's Responsibility</a></li>
+          <li><a href="/docs/tutorial/quick-start">Isolation For Untrusted Content</a></li>
+          <li><a href="/docs/tutorial/quick-start">Security Recommendations</a></li>
+          <li><a href="/docs/tutorial/quick-start">Electron Security Warnings</a></li>
+          <li><a href="/docs/tutorial/quick-start">Reporting Security Issues</a></li>
+          <li><a href="/docs/tutorial/quick-start">Chromium Security Issues and Upgrades</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3><a href="#" class="collapsed">How to...</a></h3>
+        <ul class="collapsed">
+          <li><a href="/docs/tutorial/quick-start">Notifications</a></li>
+          <li><a href="/docs/tutorial/quick-start">Recent Documents</a></li>
+          <li><a href="/docs/tutorial/quick-start">Application Progress</a></li>
+          <li><a href="/docs/tutorial/quick-start">Custom Dock Menu</a></li>
+          <li><a href="/docs/tutorial/quick-start">Custom Windows Taskbar</a></li>
+          <li><a href="/docs/tutorial/quick-start">Custom Linux Desktop Actions</a></li>
+          <li><a href="/docs/tutorial/quick-start">Keyboard Shortcuts</a></li>
+          <li><a href="/docs/tutorial/quick-start">Offline/Online detection</a></li>
+          <li><a href="/docs/tutorial/quick-start">Represented File for macOS BrowserWindows</a></li>
+          <li><a href="/docs/tutorial/quick-start">Native File Drag &amp; Drop</a></li>
+          <li><a href="/docs/tutorial/quick-start">Offscreen Rendering</a></li>
+          <li><a href="/docs/tutorial/quick-start">Dark Mode</a></li>
+          <li><a href="/docs/tutorial/quick-start">Web embeds in Electron</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3><a href="#" class="collapsed">Internals</a></h3>
+        <ul class="collapsed">
+          <li><a href="/docs/tutorial/quick-start">Electron Architecture Overview</a></li>
+          <li><a href="/docs/tutorial/quick-start">Message Loop Integration</a></li>
+          <li><a href="/docs/tutorial/quick-start">Using Node as a Library</a></li>
+          <li><a href="/docs/tutorial/quick-start">Weak References</a></li>
+          <li><a href="/docs/tutorial/quick-start">Building Chromium as a Library</a></li>
+          <li><a href="/docs/tutorial/quick-start">From native to JavaScript in Electron</a></li>
+          <li><a href="/docs/tutorial/quick-start">Technical Differences Between Electron and NW.js</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3><a href="#">Electron versions and migration</a></h3>
+        <ul>
+          <li><a href="/docs/tutorial/quick-start">Releases &amp; Developer Feedback</a></li>
+          <li><a href="/docs/tutorial/quick-start">Versioning Policy</a></li>
+          <li><a href="/docs/tutorial/quick-start">Releases Timelines</a></li>
+          <li><a href="/docs/tutorial/quick-start">Breaking API Changes</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="col-md-9">
+    {{#each doc.sections}}
+      {{> doc
+        doc=this
+        currentLocale=../currentLocale
+      }}
+    {{/each}}
+  </div>
+</div>
+<script>
+  const toggleVisibility = (evt) =>{
+    evt.preventDefault();
+    if(evt.target.classList.contains('collapsed')) {
+      evt.target.classList.remove('collapsed')
+      evt.target.parentElement.nextElementSibling.classList.remove('collapsed')
+    }else{
+      evt.target.classList.add('collapsed')
+      evt.target.parentElement.nextElementSibling.classList.add('collapsed')
+    }
+  }
+
+  document.querySelectorAll('.sidebar-navigation h3 > a').forEach(element =>{
+    console.log('hello')
+    element.addEventListener('click', toggleVisibility);
+  })
+</script>
