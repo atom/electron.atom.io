@@ -40,9 +40,9 @@ Jasper is used by developers, designers, and managers in several companies that 
 Of course, some OSS developers also are using it.
 And it is also used by some people at GitHub!
 
-<a href="https://twitter.com/mistydemeo/status/778841101109080064"><img src="https://cloud.githubusercontent.com/assets/2289/24108650/75f87706-0d4b-11e7-8fcb-9fbedf2f66ea.png" width="500"></a>
+<a href="https://twitter.com/mistydemeo/status/778841101109080064"><img src="https://cloud.githubusercontent.com/assets/2289/24108650/75f87706-0d4b-11e7-8fcb-9fbedf2f66ea.png" width="500"/></a>
 
-<a href="https://twitter.com/jna_sh/status/798283937344651264"><img src="https://cloud.githubusercontent.com/assets/2289/24108649/75f4b9e0-0d4b-11e7-9701-24a0ef251ad2.png" width="500"></a>
+<a href="https://twitter.com/jna_sh/status/798283937344651264"><img src="https://cloud.githubusercontent.com/assets/2289/24108649/75f4b9e0-0d4b-11e7-9701-24a0ef251ad2.png" width="500"/></a>
 
 ## How does Jasper work?
 
@@ -150,4 +150,3 @@ Follow [@jasperappio](https://twitter.com/jasperappio) on Twitter for updates.
 [Pull Requests API]: https://developer.github.com/v3/pulls/
 [Issues API]: https://developer.github.com/v3/issues/
 [Search API]: https://developer.github.com/v3/search/
-

@@ -105,17 +105,17 @@ context-aware behavior like autocomplete suggestions, inline method reference,
 argument checking, and more.
 
 <figure>
-  <img src="https://cloud.githubusercontent.com/assets/2289/26128017/f6318c20-3a3f-11e7-9c2c-401a32d1f9fb.png" alt="Method autocompletion">
+  <img src="https://cloud.githubusercontent.com/assets/2289/26128017/f6318c20-3a3f-11e7-9c2c-401a32d1f9fb.png" alt="Method autocompletion"/>
   <figcaption>Method autcompletion</figcaption>
 </figure>
 
 <figure>
-  <img src="https://cloud.githubusercontent.com/assets/2289/26128018/f6352600-3a3f-11e7-8d92-f0fb88ecc53e.png" alt="Method reference">
+  <img src="https://cloud.githubusercontent.com/assets/2289/26128018/f6352600-3a3f-11e7-8d92-f0fb88ecc53e.png" alt="Method reference"/>
   <figcaption>Inline method reference</figcaption>
 </figure>
 
 <figure>
-  <img src="https://cloud.githubusercontent.com/assets/2289/26128021/f6b1ca0c-3a3f-11e7-8161-ce913268a9f0.png" alt="Argument checking">
+  <img src="https://cloud.githubusercontent.com/assets/2289/26128021/f6b1ca0c-3a3f-11e7-8161-ce913268a9f0.png" alt="Argument checking"/>
   <figcaption>Argument checking</figcaption>
 </figure>
 

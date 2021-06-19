@@ -19,7 +19,7 @@ with GitHub, opening and updating pull requests automatically as content is tran
 
 <figure>
   <a href="https://electronjs.org/languages">
-    <img src="https://user-images.githubusercontent.com/2289/32803530-a35ff774-c938-11e7-9b98-5c0cfb679d84.png" alt="Electron Nav in Simplified Chinese">
+    <img src="https://user-images.githubusercontent.com/2289/32803530-a35ff774-c938-11e7-9b98-5c0cfb679d84.png" alt="Electron Nav in Simplified Chinese"/>
     <figcaption>Electron's Nav in Simplified Chinese</figcaption>
   </a>
 </figure>
@@ -35,7 +35,7 @@ To choose your language and view translation progress, visit [electronjs.org/lan
 
 <figure>
   <a href="https://electronjs.org/languages">
-    <img class="screenshot" src="https://user-images.githubusercontent.com/2289/32754734-e8e43c04-c886-11e7-9f34-f2da2bb4357b.png" alt="Current target languages on Crowdin">
+    <img class="screenshot" src="https://user-images.githubusercontent.com/2289/32754734-e8e43c04-c886-11e7-9f34-f2da2bb4357b.png" alt="Current target languages on Crowdin"/>
     <figcaption>Translations in progress on Crowdin</figcaption>
   </a>
 </figure>
@@ -71,7 +71,7 @@ here on the Japanese version of the site:
 
 <figure>
   <a href="https://electronjs.org/apps/graphql-playground">
-    <img class="screenshot" src="https://user-images.githubusercontent.com/2289/32871096-f5043292-ca33-11e7-8d03-a6a157aa183d.png" alt="GraphQL Playground">
+    <img class="screenshot" src="https://user-images.githubusercontent.com/2289/32871096-f5043292-ca33-11e7-8d03-a6a157aa183d.png" alt="GraphQL Playground"/>
   </a>
 </figure>
 
@@ -107,7 +107,7 @@ that has a cask:
 
 <figure>
   <a href="https://electronjs.org/apps/dat">
-   <img class="screenshot" src="https://user-images.githubusercontent.com/2289/32871246-c5ef6f2a-ca34-11e7-8eb4-3a5b93b91007.png">
+   <img class="screenshot" src="https://user-images.githubusercontent.com/2289/32871246-c5ef6f2a-ca34-11e7-8eb4-3a5b93b91007.png"/>
    <figcaption>Installation options tailored for your platform: macOS, Windows, Linux</figcaption>
   </a>
 </figure>
@@ -177,7 +177,7 @@ the open-source community has helped immeasurably in making Electron a success.
 Thank you!
 
 <figure>
-  <img src="https://user-images.githubusercontent.com/2289/32871386-92eaa4ea-ca35-11e7-9511-a746c7fbf2c4.png">
+  <img src="https://user-images.githubusercontent.com/2289/32871386-92eaa4ea-ca35-11e7-9511-a746c7fbf2c4.png"/>
 </figure>
 
 

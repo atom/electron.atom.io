@@ -15,7 +15,7 @@ deployment and more about developing high-quality experiences for their users.
 
 <figure>
   <a href="https://github.com/electron/update-electron-app" style="display: block; text-align: center;">
-    <img class="screenshot" src="https://user-images.githubusercontent.com/2289/39480716-e9990910-4d1d-11e8-8901-9549c6ff6050.png" alt="Updater Screenshot">
+    <img class="screenshot" src="https://user-images.githubusercontent.com/2289/39480716-e9990910-4d1d-11e8-8901-9549c6ff6050.png" alt="Updater Screenshot"/>
     <figcaption>The new updater module in action</figcaption>
   </a>
 </figure>

@@ -11,7 +11,7 @@ This week we chatted with [Felix Rieseberg](https://felixrieseberg.com/), deskto
 ---
 
 <div class="pt-5">
-  <img src="https://cloud.githubusercontent.com/assets/2289/22913898/7396b0de-f222-11e6-8e5d-147a7ced37a9.png" alt="Ghost Desktop Screenshot"> 
+  <img src="https://cloud.githubusercontent.com/assets/2289/22913898/7396b0de-f222-11e6-8e5d-147a7ced37a9.png" alt="Ghost Desktop Screenshot"/> 
 </div>
 
 ## What is Ghost?
@@ -65,4 +65,3 @@ Ghost Desktop is also an ongoing project - we're pretty far from being done. We 
 I'm a big fan of [Kap](https://getkap.co/), [Felony](https://github.com/henryboldi/felony), and [Visual Studio Code](https://code.visualstudio.com).
 
 👻
-

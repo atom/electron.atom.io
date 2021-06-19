@@ -35,6 +35,6 @@ The decisions around stable releases before v3.0.0 did not follow a schedule. We
 In order to better streamline these upgrade-related efforts, our [Upgrades](https://github.com/electron/governance/tree/master/wg-upgrades) and [Releases](https://github.com/electron/governance/tree/master/wg-releases) Working Groups were created within our [Governance](https://electronjs.org/blog/governance) system. They have allowed us to better prioritize and delegate this work, which we hope will become more apparent with each subsequent release.
 
 Here is where our new cadence will put us in comparison to Chromium's cadence:
-<img alt="line graph comparing Electron versus Chromium versions" src="https://user-images.githubusercontent.com/2138661/57543187-86340700-7308-11e9-9745-a9371bb29275.png">
+<img alt="line graph comparing Electron versus Chromium versions" src="https://user-images.githubusercontent.com/2138661/57543187-86340700-7308-11e9-9745-a9371bb29275.png"/>
 
 📨 If you have questions, please mail us at [info@electronjs.org](mailto:info@electronjs.org).

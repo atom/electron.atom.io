@@ -15,7 +15,7 @@ So here we are with some exciting i18n updates!
 Did you know that many people who read translated documentation often cross reference that with the original English documentation? They do this to familiarize themselves with English docs, and to avoid outdated or inaccurate translations, which is one caveat of internationalized documentations.
 
 <figure>
-  <img class="screenshot" src="https://user-images.githubusercontent.com/6842965/35578586-cae629e2-05e4-11e8-9431-0278f8c2b39f.gif" alt="Language toggle on Electron documentation">
+  <img class="screenshot" src="https://user-images.githubusercontent.com/6842965/35578586-cae629e2-05e4-11e8-9431-0278f8c2b39f.gif" alt="Language toggle on Electron documentation"/>
 </figure>
 
 To make cross-referencing to English docs easier, we recently shipped a feature that allows you to seamlessly toggle a section of the Electron documentation between English and whatever language you're viewing the website in. The language toggle will show up as long as you have a non-English locale selected on the website.
@@ -23,7 +23,7 @@ To make cross-referencing to English docs easier, we recently shipped a feature 
 ## ⚡️ Quick Access to Translation Page
 
 <figure>
-  <img class="screenshot" src="https://user-images.githubusercontent.com/6842965/36511386-c32e31fc-1766-11e8-8484-7466be6a5eb0.png" alt="New Electron documentation footer in Japanese">
+  <img class="screenshot" src="https://user-images.githubusercontent.com/6842965/36511386-c32e31fc-1766-11e8-8484-7466be6a5eb0.png" alt="New Electron documentation footer in Japanese"/>
   <figcaption>Electron documentation footer in Japanese</figcaption>
 </figure>
 
@@ -35,7 +35,7 @@ Ever since we have publicized the Electron documentation i18n effort, we have se
 
 <figure>
   <a href="https://crowdin.com/project/electron/">
-    <img class="screenshot" src="https://user-images.githubusercontent.com/6842965/41649826-ca26037c-747c-11e8-9594-5ce12d2978e2.png" alt="Translation Forecast provided by Crowdin">
+    <img class="screenshot" src="https://user-images.githubusercontent.com/6842965/41649826-ca26037c-747c-11e8-9594-5ce12d2978e2.png" alt="Translation Forecast provided by Crowdin"/>
     <figcaption>Translation Forecast provided by Crowdin</figcaption>
   </a>
 </figure>

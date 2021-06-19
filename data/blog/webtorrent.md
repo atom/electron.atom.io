@@ -19,7 +19,7 @@ Using open web standards, WebTorrent connects website users together to form a d
 You can see a demo of WebTorrent in action here: [webtorrent.io](https://webtorrent.io/).
 
 <a href="https://webtorrent.io/">
-  <img alt="webtorrent homepage" src="https://cloud.githubusercontent.com/assets/2289/23912149/1543d2ce-089c-11e7-8519-613740c82b47.jpg">
+  <img alt="webtorrent homepage" src="https://cloud.githubusercontent.com/assets/2289/23912149/1543d2ce-089c-11e7-8519-613740c82b47.jpg"/>
 </a>
 
 ## Why is this cool?
@@ -45,7 +45,7 @@ We created WebTorrent Desktop for three reasons:
 First, a bit of background on the design of WebTorrent.
 
 <a href="https://webtorrent.io/desktop/">
-  <img alt="webtorrent desktop logo" src="https://cloud.githubusercontent.com/assets/2289/23912151/154657e2-089c-11e7-9889-6914ce71ebc9.png" width="200" align="right">
+  <img alt="webtorrent desktop logo" src="https://cloud.githubusercontent.com/assets/2289/23912151/154657e2-089c-11e7-9889-6914ce71ebc9.png" width="200" align="right"/>
 </a>
 
 In the early days, BitTorrent used TCP as its transport protocol. Later, uTP came along promising better performance and additional advantages over TCP. Every mainstream torrent client eventually adopted uTP, and today you can use BitTorrent over either protocol. The WebRTC protocol is the next logical step. It brings the promise of interoperability with web browsers – one giant P2P network made up of all desktop BitTorrent clients and millions of web browsers.
@@ -71,7 +71,7 @@ The coolest thing built with WebTorrent, hands down, is probably [Gaia 3D Star M
 You can read about how this was made in [Torrenting The Galaxy](https://medium.com/@flimshaw/torrenting-the-galaxy-extracting-2-million-3d-stars-from-180gb-of-csvs-457ff70c0f93), a blog post where the author, Charlie Hoey, explains how he built the star map with WebGL and WebTorrent.
 
 <a href="https://brave.com/">
-  <img alt="brave logo" src="https://cloud.githubusercontent.com/assets/2289/23912147/1542ad4a-089c-11e7-8106-15c8e34298a9.png" width="150" align="left">
+  <img alt="brave logo" src="https://cloud.githubusercontent.com/assets/2289/23912147/1542ad4a-089c-11e7-8106-15c8e34298a9.png" width="150" align="left"/>
 </a>
 
 We're also huge fans of [Brave](https://brave.com/). Brave is a browser that automatically blocks ads and trackers to make the web faster and safer. Brave recently added torrent support, so you can [view traditional torrents without using a separate app](https://torrentfreak.com/brave-a-privacy-focused-browser-with-built-in-torrent-streaming-170219/). That feature is powered by WebTorrent.
@@ -83,7 +83,7 @@ One of the co-founders of Brave is actually Brendan Eich, the creator of JavaScr
 ## Why did you choose to build WebTorrent Desktop on Electron?
 
 <a href="https://webtorrent.io/desktop/">
-  <img alt="WebTorrent Desktop main window" src="https://cloud.githubusercontent.com/assets/2289/23912150/15444542-089c-11e7-91ab-7fe3f1e5ee43.jpg" align="right" width="450">
+  <img alt="WebTorrent Desktop main window" src="https://cloud.githubusercontent.com/assets/2289/23912150/15444542-089c-11e7-91ab-7fe3f1e5ee43.jpg" align="right" width="450"/>
 </a>
 
 There is a meme that Electron apps are "bloated" because they include the entire Chrome content module in every app. In some cases, this is partially true (an Electron app installer is usually ~40MB, where an OS-specific app installer is usually ~20MB).
@@ -137,4 +137,3 @@ If you're interested in getting involved in the project, check out [our GitHub p
 <script async class="speakerdeck-embed" data-id="5aae08bb7c5b4dbd89060cff11bb1300" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 [DC](https://dcpos.ch/), another WebTorrent contributor, wrote [a checklist of things you can do](https://blog.dcpos.ch/how-to-make-your-electron-app-sexy) to make your app feel polished and native. It comes with code examples and covers things like macOS dock integration, drag-and-drop, desktop notifications, and making sure your app loads quickly.
-
