@@ -1,4 +1,4 @@
-const DIST_URL = 'https://gh-contractor-zcbenz.s3.amazonaws.com/atom-shell/dist'
+const DIST_URL = 'https://electronjs-artifacts.s3.amazonaws.com/dist'
 
 module.exports = (req, res, next) => {
   const url = req.params[0]
