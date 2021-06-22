@@ -46,7 +46,8 @@ h4 {
 
   pre {
     padding: $spacer-3;
-    overflow: auto;
+    position: relative;
+    overflow: visible;
     font-size: 16px;
     line-height: 1.45;
 

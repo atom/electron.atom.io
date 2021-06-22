@@ -58,16 +58,16 @@
   </section>
 
   <section class='page-section page-section-spacious bg-shade' id='get-started'>
-    <div class='container-narrow text-center'>
+    <div class='container-narrow text-center markdown-body'>
       <h1>Installation</h1>
       <figure class="highlight highlight-dark text-left my-4">
-      <pre><code>$ <span class="keyword">npm</span> install --save-dev spectron</code></pre>
+      <pre><code class="hljs">$ <span class="keyword">npm</span> install --save-dev spectron</code></pre>
       </figure>
 
       <h1>Getting started</h1>
       <p class="lead text-center-sm">The example test below verifies that a visible window is opened with a title.</p>
       <figure class="highlight highlight-dark text-left my-4">
-      <pre><code><span class="keyword">var</span> Application = require(<span class="string">'spectron'</span>).Application
+      <pre><code class="hljs"><span class="keyword">var</span> Application = require(<span class="string">'spectron'</span>).Application
 <span class="keyword">var</span> assert = require(<span class="string">'assert'</span>)
 
 <span class="keyword">var</span> app = <span class="keyword">new</span> Application({
