@@ -94,7 +94,7 @@
     "@types/cookie-parser": "^1.4.2",
     "@types/express": "^4.17.13",
     "babel-loader": "^8.2.2",
-    "browser-sync": "^2.27.1",
+    "browser-sync": "^2.27.4",
     "chai": "^4.3.4",
     "chai-cheerio": "^1.0.0",
     "check-for-leaks": "^1.2.1",
