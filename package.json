@@ -62,7 +62,7 @@
     "flat": "^5.0.2",
     "fs-extra": "^10.0.0",
     "got": "^11.8.2",
-    "gray-matter": "^4.0.2",
+    "gray-matter": "^4.0.3",
     "helmet": "^4.6.0",
     "http-proxy-middleware": "^1.1.1",
     "instantsearch.js": "^2.10.4",
