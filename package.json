@@ -86,7 +86,7 @@
     "search-with-your-keyboard": "^2.0.0",
     "semver": "^7.3.5",
     "set-query-string": "^2.2.0",
-    "tocbot": "^4.12.2",
+    "tocbot": "^4.12.3",
     "ultimate-pagination": "^1.0.0"
   },
   "devDependencies": {
