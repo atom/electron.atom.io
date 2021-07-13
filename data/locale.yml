@@ -74,7 +74,9 @@ community:
       posting on
       <a href='https://discuss.atom.io/c/electron'>Discuss</a>,
       or visiting
-      <a href='https://stackoverflow.com/questions/tagged/electron'>Stack Overflow</a>."
+      <a href='https://stackoverflow.com/questions/tagged/electron'>Stack Overflow</a>
+      or 
+      <a href='https://dev.to/t/electron'>DEV Communtiy</a>."
     security:
       "<a href='mailto:security@electronjs.org'><b>Report security issues</b></a>
       by emailing
