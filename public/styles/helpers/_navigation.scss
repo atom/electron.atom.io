@@ -1,3 +1,26 @@
+$breakpoints: (
+  xs: 576px,
+  sm: 769px,
+  md: 992px,
+  lg: 1200px
+);
+
+@mixin below_res($breakpoint) {
+
+  @if map-has-key($breakpoints, $breakpoint) {
+
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+    @media (max-width: ($breakpoint-value - 1)) {
+      @content;
+    }
+
+  } @else {
+
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}
+
 .site-header-logo {
   font-size: 22px;
 
@@ -71,8 +94,8 @@
 }
 
 .site-header-nav {
-  margin-top: 20px;
   line-height: 2;
+  align-items: center;
 
   @include breakpoint(lg) {
     float: right;
@@ -80,6 +103,7 @@
   }
 
   .mega-octicon {
+    margin-left: 20px; //margin between searchbar and octicon
     min-width: 32px; // stops jumping of the nav when loading the page
   }
 }
@@ -88,6 +112,16 @@
   font-size: 15px;
   border-bottom: 2px solid transparent;
   display: inline-block;
+  align-self: center; 
+
+
+  @include below_res(xs) {
+    margin-top: 10px;
+  }
+
+  @include below_res(sm) {
+    margin-top:15px;
+  }
 
   + .site-header-nav-item {
     margin-left: 20px;
@@ -108,11 +142,13 @@
     background-color: transparent;
     border: 1px solid $jumbo-color-strong;
     border-radius: 3px;
-    padding: 0 7px;
+    padding: 0px 7px;
     opacity: 0.7;
     font-size: 12px;
     line-height: 2;
+    height: 100%; 
     cursor: pointer;
+    margin-top: (10+5)px;
   }
 }
 
